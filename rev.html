@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        html{
+            font-size: larger;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: gray;
+            border: 4px solid black;
+            
+        }
+        form{
+            width: 100%;
+            height: 100%;
+            max-width: 1000px;
+            max-height: 2000px;
+            border: 4px solid black;
+            border-radius: 5px;
+            padding: 1rem;
+            display: flex ;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        section{
+            width: 100%;
+            padding: 0 1rem;
+        }
+        .Names {
+            display: block;
+            flex-direction: grid;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid black;
+            padding: 1rem 1rem;
+        }
+        .Gender {
+            border: 1px solid black;
+            display: block;
+            flex-direction: grid;
+        }
+        .County{
+            padding: 1rem 1rem;
+            color: black;
+            border: 2px solid black;
+
+        }
+        .Program{
+            padding: 1rem 1rem;
+            border: 2px solid black;
+
+        }
+        .Sponsorship{
+            padding: 1rem 1rem;
+            border: 2px solid black;
+            ;
+        }
+        .buttons{
+            display: block;
+            gap: 2rem;
+            font-size: larger;
+            
+        }
+        .buttons button{
+            width: 30%;
+            transition: all .5s ease-in-out;
+        }
+        button{
+            padding: 0.5rem 1rem;
+            border: 2px solid black;
+            border-radius: 10px
+            ;
+        }
+        button :hover{
+            background-color: transparent;
+            color: cyan;
+            cursor: pointer;
+        }
+        button :active{
+            transform: scale(.5);
+        }
+    </style>
+  </head>
+<body>
+    <form>
+        <section class="Names">
+        <label for="">
+            <b>Name</b>
+        </label> 
+        
+        <input type="text" name="Name" placeholder="Ken Njue" />
+        <label for="">
+            <b>ID No</b> 
+        </label>
+        
+        <input type="number" name="number" placeholder="12345678"/>
+    </section>
+    <section class="Gender">
+        <label for="">
+            <b>Gender</b>
+        </label> 
+        
+        <input type="radio" name="gender" value="Male" checked>Male
+        <input type="radio" name="gender" value="Female">Female
+    </section>
+<section class="County">
+        <label for="">
+            <b>County of Origin</b>
+        </label>
+        
+        <select name="dropdown">
+            <option value="Nairobi" selected>Nairobi</option>
+            <option value="Kirinyaga">Kirinyaga</option>
+            <option value="Machakos">Machakos</option>
+            <option value="Embu">Embu</option>
+            <option value="Meru">Meru</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Migori">Migori</option>
+            <option value="Mombasa">Mombasa</option>
+        </select>
+    </section>
+    <section class="Program">
+
+        <label for="">
+            <b>Program</b>
+        </label>
+
+        <input type="text" name="Program" placeholder="Bsc.IT"/>
+    </section>
+
+<section class="Sponsorship">
+        <label for="">
+            <b>Sponsorship</b>
+        </label>
+
+        <input type="checkbox" name="Self sponsored" value="on">Self sponsored
+        <input type="checkbox" name="Govt sponsored" value="on">Govt sponsored
+    </section>
+    <section>
+    <label for="">
+        <b>Image</b>
+    </label>
+
+    <img src="img/67321.jpg" alt="Darknoble" width="300" height="200" />
+</section>
+
+<section class="buttons">
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+
+    
+        
+    </form>
+
+</body>
+
+</html>
